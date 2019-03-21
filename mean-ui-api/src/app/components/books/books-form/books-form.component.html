@@ -4,7 +4,7 @@
     <div class="form-group">
       <label for="title">Title</label>
       <input type="text" class="form-control" id="title" name="title" [(ngModel)]="book.title" required
-        #title="ngModel">
+        #title="ngModel" maxlength="30">
       <div *ngIf="title.invalid && (title.dirty || title.touched)">
         <p class="text-danger" *ngIf="title.errors.required">
           Title is required.

@@ -1,0 +1,9 @@
+<div class="my-5 book-list-container">
+  <h2>Book List ({{bookList.length}})</h2>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of bookList">
+      <p>Title: {{item.title}} ({{getCategory(item.category)}})</p>
+      <p>Description: {{item.description}}</p>
+    </li>
+  </ul>
+</div>
